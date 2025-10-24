@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollsoft\Telegram\Components;
+namespace sakoora0x\Telegram\Components;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
-use Mollsoft\Telegram\EditForm\BaseForm;
+use sakoora0x\Telegram\EditForm\BaseForm;
 
 class EditForm extends Component
 {

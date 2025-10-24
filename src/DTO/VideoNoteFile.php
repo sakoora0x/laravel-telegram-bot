@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO;
+namespace sakoora0x\Telegram\DTO;
 
-use Mollsoft\Telegram\Abstract\DTO;
-use Mollsoft\Telegram\Interfaces\IsFile;
+use sakoora0x\Telegram\Abstract\DTO;
+use sakoora0x\Telegram\Interfaces\IsFile;
 
 class VideoNoteFile extends DTO implements IsFile
 {

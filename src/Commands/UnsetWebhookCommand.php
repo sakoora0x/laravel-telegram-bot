@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollsoft\Telegram\Commands;
+namespace sakoora0x\Telegram\Commands;
 
 use Illuminate\Console\Command;
-use Mollsoft\Telegram\API;
-use Mollsoft\Telegram\Facades\Telegram;
-use Mollsoft\Telegram\Models\TelegramBot;
+use sakoora0x\Telegram\API;
+use sakoora0x\Telegram\Facades\Telegram;
+use sakoora0x\Telegram\Models\TelegramBot;
 
 class UnsetWebhookCommand extends Command
 {

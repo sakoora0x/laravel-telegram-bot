@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollsoft\Telegram;
+namespace sakoora0x\Telegram;
 
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\Foundation\RedisCollection;
-use Mollsoft\Telegram\Models\TelegramChat;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\Foundation\RedisCollection;
+use sakoora0x\Telegram\Models\TelegramChat;
 
 /**
  * @extends RedisCollection<Message>

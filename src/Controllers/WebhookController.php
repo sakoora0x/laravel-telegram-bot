@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Controllers;
+namespace sakoora0x\Telegram\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Process;
-use Mollsoft\Telegram\Facades\Telegram;
-use Mollsoft\Telegram\Models\TelegramBot;
-use Mollsoft\Telegram\Models\TelegramChat;
-use Mollsoft\Telegram\Services\WebhookHandler;
+use sakoora0x\Telegram\Facades\Telegram;
+use sakoora0x\Telegram\Models\TelegramBot;
+use sakoora0x\Telegram\Models\TelegramChat;
+use sakoora0x\Telegram\Services\WebhookHandler;
 
 class WebhookController
 {

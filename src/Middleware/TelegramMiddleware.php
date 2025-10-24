@@ -1,12 +1,12 @@
 <?php
 
-namespace Mollsoft\Telegram\Middleware;
+namespace sakoora0x\Telegram\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\TelegramRequest;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\TelegramRequest;
 
 class TelegramMiddleware
 {

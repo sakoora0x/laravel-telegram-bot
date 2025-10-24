@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\EditForm;
+namespace sakoora0x\Telegram\EditForm;
 
 class FormField
 {

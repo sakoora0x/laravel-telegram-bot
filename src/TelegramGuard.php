@@ -1,15 +1,15 @@
 <?php
 
-namespace Mollsoft\Telegram;
+namespace sakoora0x\Telegram;
 
 use Illuminate\Auth\GuardHelpers;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Support\Traits\Macroable;
-use Mollsoft\Telegram\Facades\Telegram;
-use Mollsoft\Telegram\Models\TelegramBot;
-use Mollsoft\Telegram\Models\TelegramUser;
+use sakoora0x\Telegram\Facades\Telegram;
+use sakoora0x\Telegram\Models\TelegramBot;
+use sakoora0x\Telegram\Models\TelegramUser;
 
 class TelegramGuard implements StatefulGuard
 {

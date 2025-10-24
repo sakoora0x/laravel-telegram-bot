@@ -1,16 +1,16 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO;
+namespace sakoora0x\Telegram\DTO;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Date;
-use Mollsoft\Telegram\Abstract\DTO;
-use Mollsoft\Telegram\DTO\Message\Document;
-use Mollsoft\Telegram\DTO\Message\Photo;
-use Mollsoft\Telegram\DTO\Message\Video;
-use Mollsoft\Telegram\DTO\Message\VideoNote;
-use Mollsoft\Telegram\DTO\Message\Voice;
-use Mollsoft\Telegram\Enums\Direction;
+use sakoora0x\Telegram\Abstract\DTO;
+use sakoora0x\Telegram\DTO\Message\Document;
+use sakoora0x\Telegram\DTO\Message\Photo;
+use sakoora0x\Telegram\DTO\Message\Video;
+use sakoora0x\Telegram\DTO\Message\VideoNote;
+use sakoora0x\Telegram\DTO\Message\Voice;
+use sakoora0x\Telegram\Enums\Direction;
 
 class Message extends DTO
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Mollsoft\Telegram\Models;
+namespace sakoora0x\Telegram\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Mollsoft\Telegram\API;
-use Mollsoft\Telegram\Facades\Telegram;
+use sakoora0x\Telegram\API;
+use sakoora0x\Telegram\Facades\Telegram;
 
 class TelegramBot extends Model
 {

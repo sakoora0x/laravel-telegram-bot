@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Services;
+namespace sakoora0x\Telegram\Services;
 
 use Closure;
 use Illuminate\Contracts\Cache\LockTimeoutException;
@@ -13,22 +13,22 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
-use Mollsoft\Telegram\ChatAPI;
-use Mollsoft\Telegram\DTO\CallbackQuery;
-use Mollsoft\Telegram\DTO\Chat;
-use Mollsoft\Telegram\DTO\Contact;
-use Mollsoft\Telegram\DTO\Document;
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\DTO\PhotoSize;
-use Mollsoft\Telegram\DTO\Update;
-use Mollsoft\Telegram\Enums\ChatAction;
-use Mollsoft\Telegram\Facades\Telegram;
-use Mollsoft\Telegram\Interfaces\HasCaption;
-use Mollsoft\Telegram\MessageStack;
-use Mollsoft\Telegram\Models\TelegramBot;
-use Mollsoft\Telegram\Models\TelegramChat;
-use Mollsoft\Telegram\Storage;
-use Mollsoft\Telegram\TelegramRequest;
+use sakoora0x\Telegram\ChatAPI;
+use sakoora0x\Telegram\DTO\CallbackQuery;
+use sakoora0x\Telegram\DTO\Chat;
+use sakoora0x\Telegram\DTO\Contact;
+use sakoora0x\Telegram\DTO\Document;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\DTO\PhotoSize;
+use sakoora0x\Telegram\DTO\Update;
+use sakoora0x\Telegram\Enums\ChatAction;
+use sakoora0x\Telegram\Facades\Telegram;
+use sakoora0x\Telegram\Interfaces\HasCaption;
+use sakoora0x\Telegram\MessageStack;
+use sakoora0x\Telegram\Models\TelegramBot;
+use sakoora0x\Telegram\Models\TelegramChat;
+use sakoora0x\Telegram\Storage;
+use sakoora0x\Telegram\TelegramRequest;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class WebhookHandler

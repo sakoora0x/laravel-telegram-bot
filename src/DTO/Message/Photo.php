@@ -1,12 +1,12 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO\Message;
+namespace sakoora0x\Telegram\DTO\Message;
 
 
 use Illuminate\Support\Collection;
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\DTO\PhotoSize;
-use Mollsoft\Telegram\Interfaces\HasCaption;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\DTO\PhotoSize;
+use sakoora0x\Telegram\Interfaces\HasCaption;
 
 class Photo extends Message implements HasCaption
 {

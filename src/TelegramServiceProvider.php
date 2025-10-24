@@ -1,17 +1,17 @@
 <?php
 
-namespace Mollsoft\Telegram;
+namespace sakoora0x\Telegram;
 
-use Mollsoft\Telegram\Commands\InitCommand;
-use Mollsoft\Telegram\Commands\LiveCommand;
-use Mollsoft\Telegram\Commands\NewBotCommand;
-use Mollsoft\Telegram\Commands\PoolingCommand;
-use Mollsoft\Telegram\Commands\SetWebhookCommand;
-use Mollsoft\Telegram\Commands\TruncateCommand;
-use Mollsoft\Telegram\Commands\UnsetWebhookCommand;
-use Mollsoft\Telegram\Components\EditForm;
-use Mollsoft\Telegram\Providers\AuthServiceProvider;
-use Mollsoft\Telegram\Providers\RouteServiceProvider;
+use sakoora0x\Telegram\Commands\InitCommand;
+use sakoora0x\Telegram\Commands\LiveCommand;
+use sakoora0x\Telegram\Commands\NewBotCommand;
+use sakoora0x\Telegram\Commands\PoolingCommand;
+use sakoora0x\Telegram\Commands\SetWebhookCommand;
+use sakoora0x\Telegram\Commands\TruncateCommand;
+use sakoora0x\Telegram\Commands\UnsetWebhookCommand;
+use sakoora0x\Telegram\Components\EditForm;
+use sakoora0x\Telegram\Providers\AuthServiceProvider;
+use sakoora0x\Telegram\Providers\RouteServiceProvider;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

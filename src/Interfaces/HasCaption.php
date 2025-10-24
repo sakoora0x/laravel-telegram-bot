@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Interfaces;
+namespace sakoora0x\Telegram\Interfaces;
 
 interface HasCaption
 {

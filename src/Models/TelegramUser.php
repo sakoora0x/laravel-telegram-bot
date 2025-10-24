@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollsoft\Telegram\Models;
+namespace sakoora0x\Telegram\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Mollsoft\Telegram\Facades\Telegram;
+use sakoora0x\Telegram\Facades\Telegram;
 
 class TelegramUser extends Model
 {

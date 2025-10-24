@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO\Message;
+namespace sakoora0x\Telegram\DTO\Message;
 
 
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\DTO\VideoNoteFile;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\DTO\VideoNoteFile;
 
 class VideoNote extends Message
 {

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Mollsoft\Telegram\Controllers\WebhookController;
+use sakoora0x\Telegram\Controllers\WebhookController;
 
 Route::post('telegram/live', [WebhookController::class, 'live'])
     ->name('telegram.live');

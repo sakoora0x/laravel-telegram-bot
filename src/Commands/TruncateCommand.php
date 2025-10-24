@@ -1,14 +1,14 @@
 <?php
 
-namespace Mollsoft\Telegram\Commands;
+namespace sakoora0x\Telegram\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Date;
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\Facades\Telegram;
-use Mollsoft\Telegram\MessageStack;
-use Mollsoft\Telegram\Models\TelegramBot;
-use Mollsoft\Telegram\Models\TelegramChat;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\Facades\Telegram;
+use sakoora0x\Telegram\MessageStack;
+use sakoora0x\Telegram\Models\TelegramBot;
+use sakoora0x\Telegram\Models\TelegramChat;
 
 class TruncateCommand extends Command
 {

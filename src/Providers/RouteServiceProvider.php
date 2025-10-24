@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Mollsoft\Telegram\Providers;
+namespace sakoora0x\Telegram\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Facades\Route;
-use Mollsoft\Telegram\Middleware\TelegramMiddleware;
+use sakoora0x\Telegram\Middleware\TelegramMiddleware;
 
 class RouteServiceProvider extends ServiceProvider
 {

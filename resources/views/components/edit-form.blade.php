@@ -1,5 +1,5 @@
 @php
-    /** @var \Mollsoft\Telegram\EditForm\BaseForm $form */
+    /** @var \sakoora0x\Telegram\EditForm\BaseForm $form */
 @endphp
 
 <message>

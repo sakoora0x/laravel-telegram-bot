@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Foundation;
+namespace sakoora0x\Telegram\Foundation;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Redis;

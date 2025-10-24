@@ -1,18 +1,18 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO\Message;
+namespace sakoora0x\Telegram\DTO\Message;
 
 
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\Interfaces\HasCaption;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\Interfaces\HasCaption;
 
 class Document extends Message implements HasCaption
 {
-    public function document(): ?\Mollsoft\Telegram\DTO\Document
+    public function document(): ?\sakoora0x\Telegram\DTO\Document
     {
         $value = $this->get('document');
 
-        return is_array($value) ? \Mollsoft\Telegram\DTO\Document::fromArray($value) : null;
+        return is_array($value) ? \sakoora0x\Telegram\DTO\Document::fromArray($value) : null;
     }
 
     public function documentSrc(): ?string

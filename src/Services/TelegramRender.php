@@ -1,12 +1,12 @@
 <?php
 
-namespace Mollsoft\Telegram\Services;
+namespace sakoora0x\Telegram\Services;
 
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Log;
-use Mollsoft\Telegram\ChatAPI;
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\MessageStack;
+use sakoora0x\Telegram\ChatAPI;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\MessageStack;
 
 readonly class TelegramRender
 {

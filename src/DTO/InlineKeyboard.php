@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO;
+namespace sakoora0x\Telegram\DTO;
 
-use Mollsoft\Telegram\Abstract\DTO;
-use Mollsoft\Telegram\DTO\InlineKeyboard\Button;
+use sakoora0x\Telegram\Abstract\DTO;
+use sakoora0x\Telegram\DTO\InlineKeyboard\Button;
 
 class InlineKeyboard extends DTO
 {

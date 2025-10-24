@@ -1,13 +1,13 @@
 <?php
 
-namespace Mollsoft\Telegram\EditForm;
+namespace sakoora0x\Telegram\EditForm;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use Mollsoft\Telegram\Exceptions\RedirectException;
-use Mollsoft\Telegram\TelegramRequest;
+use sakoora0x\Telegram\Exceptions\RedirectException;
+use sakoora0x\Telegram\TelegramRequest;
 
 abstract class BaseForm
 {

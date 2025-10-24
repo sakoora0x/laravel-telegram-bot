@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollsoft\Telegram\Middleware;
+namespace sakoora0x\Telegram\Middleware;
 
 use Illuminate\Http\Request;
-use Mollsoft\Telegram\TelegramRequest;
+use sakoora0x\Telegram\TelegramRequest;
 
 class Authenticate extends \Illuminate\Auth\Middleware\Authenticate
 {

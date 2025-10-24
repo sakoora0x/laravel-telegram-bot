@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Abstract;
+namespace sakoora0x\Telegram\Abstract;
 
 abstract class DTO
 {

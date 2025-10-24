@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO;
+namespace sakoora0x\Telegram\DTO;
 
-use Mollsoft\Telegram\Abstract\DTO;
+use sakoora0x\Telegram\Abstract\DTO;
 
 class CallbackQuery extends DTO
 {

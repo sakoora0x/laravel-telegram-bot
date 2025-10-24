@@ -1,9 +1,9 @@
 # Laravel Telegram Bot
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mollsoft/laravel-telegram-bot.svg?style=flat-square)](https://packagist.org/packages/mollsoft/laravel-telegram-bot)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/mollsoft/laravel-telegram-bot/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/mollsoft/laravel-telegram-bot/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mollsoft/laravel-telegram-bot/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mollsoft/laravel-telegram-bot/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/mollsoft/laravel-telegram-bot.svg?style=flat-square)](https://packagist.org/packages/mollsoft/laravel-telegram-bot)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/sakoora0x/laravel-telegram-bot.svg?style=flat-square)](https://packagist.org/packages/sakoora0x/laravel-telegram-bot)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/sakoora0x/laravel-telegram-bot/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/sakoora0x/laravel-telegram-bot/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/sakoora0x/laravel-telegram-bot/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/sakoora0x/laravel-telegram-bot/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/sakoora0x/laravel-telegram-bot.svg?style=flat-square)](https://packagist.org/packages/sakoora0x/laravel-telegram-bot)
 
 EN: This package for Laravel 11+ allows you to easily create interactive Telegram bots, using Laravel routing, and using Blade templates to conduct a dialogue with the user.
 
@@ -16,7 +16,7 @@ You can install the package via composer:
 Используйте менеджер пакетов Composer для установки пакета:
 
 ```bash
-composer require mollsoft/laravel-telegram-bot
+composer require sakoora0x/laravel-telegram-bot
 ```
 
 ```bash
@@ -79,7 +79,7 @@ If you want work with automatic truncate dialogs, you must run command `php arti
 ```php
 ->withMiddleware(function (Middleware $middleware) {
     $middleware->alias([
-        'telegram.live' => \Mollsoft\Telegram\Middleware\LiveMiddleware::class,
+        'telegram.live' => \sakoora0x\Telegram\Middleware\LiveMiddleware::class,
     ]);
 })
 ```
@@ -174,7 +174,7 @@ If you want make redirect to another page from button, use this template:
 ### Edit Form / Форма для редактирования данных
 
 ```php
-class MyForm extends \Mollsoft\Telegram\EditForm\BaseForm 
+class MyForm extends \sakoora0x\Telegram\EditForm\BaseForm 
 {
     public function rules(): array
     {
@@ -254,6 +254,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ## Credits / Авторы
 
 - [MollSoft](https://github.com/mollsoft)
+- [sakoora0x](https://github.com/sakoora0x)
 
 ## License / Лицензия
 

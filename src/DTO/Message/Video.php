@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO\Message;
+namespace sakoora0x\Telegram\DTO\Message;
 
 
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\DTO\VideoFile;
-use Mollsoft\Telegram\Interfaces\HasCaption;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\DTO\VideoFile;
+use sakoora0x\Telegram\Interfaces\HasCaption;
 
 class Video extends Message implements HasCaption
 {

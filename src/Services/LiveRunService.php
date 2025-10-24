@@ -1,11 +1,11 @@
 <?php
 
-namespace Mollsoft\Telegram\Services;
+namespace sakoora0x\Telegram\Services;
 
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Process;
-use Mollsoft\Telegram\Models\TelegramChat;
+use sakoora0x\Telegram\Models\TelegramChat;
 
 class LiveRunService
 {

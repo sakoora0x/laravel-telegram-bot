@@ -1,8 +1,8 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO\ReplyKeyboard;
+namespace sakoora0x\Telegram\DTO\ReplyKeyboard;
 
-use Mollsoft\Telegram\Abstract\DTO;
+use sakoora0x\Telegram\Abstract\DTO;
 
 class Button extends DTO
 {

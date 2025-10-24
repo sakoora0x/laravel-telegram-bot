@@ -1,13 +1,13 @@
 <?php
 
-namespace Mollsoft\Telegram\Services;
+namespace sakoora0x\Telegram\Services;
 
 use Illuminate\Support\Facades\Process;
-use Mollsoft\Telegram\API;
-use Mollsoft\Telegram\DTO\Update;
-use Mollsoft\Telegram\Facades\Telegram;
-use Mollsoft\Telegram\Foundation\BaseService;
-use Mollsoft\Telegram\Models\TelegramBot;
+use sakoora0x\Telegram\API;
+use sakoora0x\Telegram\DTO\Update;
+use sakoora0x\Telegram\Facades\Telegram;
+use sakoora0x\Telegram\Foundation\BaseService;
+use sakoora0x\Telegram\Models\TelegramBot;
 
 class PollingService extends BaseService
 {

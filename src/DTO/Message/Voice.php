@@ -1,14 +1,14 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO\Message;
+namespace sakoora0x\Telegram\DTO\Message;
 
 
 use Illuminate\Support\Collection;
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\DTO\PhotoSize;
-use Mollsoft\Telegram\DTO\VideoFile;
-use Mollsoft\Telegram\DTO\VoiceNote;
-use Mollsoft\Telegram\Interfaces\HasCaption;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\DTO\PhotoSize;
+use sakoora0x\Telegram\DTO\VideoFile;
+use sakoora0x\Telegram\DTO\VoiceNote;
+use sakoora0x\Telegram\Interfaces\HasCaption;
 
 class Voice extends Message implements HasCaption
 {

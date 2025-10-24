@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Models;
+namespace sakoora0x\Telegram\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -9,13 +9,13 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
-use Mollsoft\Telegram\DTO\Document;
-use Mollsoft\Telegram\DTO\PhotoSize;
-use Mollsoft\Telegram\DTO\VideoFile;
-use Mollsoft\Telegram\DTO\VideoNoteFile;
-use Mollsoft\Telegram\DTO\VoiceNote;
-use Mollsoft\Telegram\Facades\Telegram;
-use Mollsoft\Telegram\Interfaces\IsFile;
+use sakoora0x\Telegram\DTO\Document;
+use sakoora0x\Telegram\DTO\PhotoSize;
+use sakoora0x\Telegram\DTO\VideoFile;
+use sakoora0x\Telegram\DTO\VideoNoteFile;
+use sakoora0x\Telegram\DTO\VoiceNote;
+use sakoora0x\Telegram\Facades\Telegram;
+use sakoora0x\Telegram\Interfaces\IsFile;
 
 class TelegramAttachment extends Model
 {

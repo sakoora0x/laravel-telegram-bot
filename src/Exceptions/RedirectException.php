@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Exceptions;
+namespace sakoora0x\Telegram\Exceptions;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Route;

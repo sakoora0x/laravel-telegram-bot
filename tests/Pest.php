@@ -1,5 +1,5 @@
 <?php
 
-use Mollsoft\Telegram\Tests\TestCase;
+use sakoora0x\Telegram\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

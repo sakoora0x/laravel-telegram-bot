@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Foundation;
+namespace sakoora0x\Telegram\Foundation;
 
 abstract class BaseEntity
 {

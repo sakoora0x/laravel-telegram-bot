@@ -1,16 +1,16 @@
 <?php
 
-namespace Mollsoft\Telegram;
+namespace sakoora0x\Telegram;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Log;
-use Mollsoft\Telegram\Models\TelegramAttachment;
-use Mollsoft\Telegram\Models\TelegramBot;
-use Mollsoft\Telegram\Models\TelegramChat;
-use Mollsoft\Telegram\Models\TelegramUser;
-use Mollsoft\Telegram\Services\HTMLParser;
-use Mollsoft\Telegram\Services\TelegramRender;
+use sakoora0x\Telegram\Models\TelegramAttachment;
+use sakoora0x\Telegram\Models\TelegramBot;
+use sakoora0x\Telegram\Models\TelegramChat;
+use sakoora0x\Telegram\Models\TelegramUser;
+use sakoora0x\Telegram\Services\HTMLParser;
+use sakoora0x\Telegram\Services\TelegramRender;
 
 class Telegram
 {

@@ -1,21 +1,21 @@
 <?php
 
-namespace Mollsoft\Telegram;
+namespace sakoora0x\Telegram;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
-use Mollsoft\Telegram\Abstract\ApiClient;
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\DTO\Message\Document;
-use Mollsoft\Telegram\DTO\Message\Photo;
-use Mollsoft\Telegram\DTO\Message\Video;
-use Mollsoft\Telegram\DTO\Message\VideoNote;
-use Mollsoft\Telegram\DTO\Message\Voice;
-use Mollsoft\Telegram\DTO\UserProfilePhotos;
-use Mollsoft\Telegram\Enums\ChatAction;
-use Mollsoft\Telegram\Interfaces\HasCaption;
+use sakoora0x\Telegram\Abstract\ApiClient;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\DTO\Message\Document;
+use sakoora0x\Telegram\DTO\Message\Photo;
+use sakoora0x\Telegram\DTO\Message\Video;
+use sakoora0x\Telegram\DTO\Message\VideoNote;
+use sakoora0x\Telegram\DTO\Message\Voice;
+use sakoora0x\Telegram\DTO\UserProfilePhotos;
+use sakoora0x\Telegram\Enums\ChatAction;
+use sakoora0x\Telegram\Interfaces\HasCaption;
 
 class ChatAPI extends ApiClient
 {

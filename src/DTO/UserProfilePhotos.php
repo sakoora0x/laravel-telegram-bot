@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollsoft\Telegram\DTO;
+namespace sakoora0x\Telegram\DTO;
 
 use Illuminate\Support\Collection;
-use Mollsoft\Telegram\Abstract\DTO;
+use sakoora0x\Telegram\Abstract\DTO;
 
 class UserProfilePhotos extends DTO
 {

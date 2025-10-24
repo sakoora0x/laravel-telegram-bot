@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollsoft\Telegram\Commands;
+namespace sakoora0x\Telegram\Commands;
 
 use Illuminate\Console\Command;
-use Mollsoft\Telegram\Services\LiveRunService;
+use sakoora0x\Telegram\Services\LiveRunService;
 
 class LiveCommand extends Command
 {

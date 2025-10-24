@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram;
+namespace sakoora0x\Telegram;
 
 use Illuminate\Support\Collection;
 

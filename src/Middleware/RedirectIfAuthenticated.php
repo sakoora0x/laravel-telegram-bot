@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Middleware;
+namespace sakoora0x\Telegram\Middleware;
 
 use Illuminate\Support\Facades\Route;
 

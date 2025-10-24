@@ -1,6 +1,6 @@
 <?php
 
-use Mollsoft\Telegram\DTO\BotCommand;
+use sakoora0x\Telegram\DTO\BotCommand;
 
 return [
     'api' => [
@@ -53,9 +53,9 @@ return [
         'truncate' => 2 * 24 * 60 * 60, // очистка диалога кроме сообщения с reply keyboard через n-секунд после неактивности
     ],
     'models' => [
-        'bot' => \Mollsoft\Telegram\Models\TelegramBot::class,
-        'chat' => \Mollsoft\Telegram\Models\TelegramChat::class,
-        'user' => \Mollsoft\Telegram\Models\TelegramUser::class,
-        'attachment' => \Mollsoft\Telegram\Models\TelegramAttachment::class,
+        'bot' => \sakoora0x\Telegram\Models\TelegramBot::class,
+        'chat' => \sakoora0x\Telegram\Models\TelegramChat::class,
+        'user' => \sakoora0x\Telegram\Models\TelegramUser::class,
+        'attachment' => \sakoora0x\Telegram\Models\TelegramAttachment::class,
     ]
 ];

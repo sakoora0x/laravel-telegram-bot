@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollsoft\Telegram\Middleware;
+namespace sakoora0x\Telegram\Middleware;
 
 use Closure;
 use Illuminate\Http\Response;
-use Mollsoft\Telegram\TelegramRequest;
+use sakoora0x\Telegram\TelegramRequest;
 
 class NotFoundMiddleware
 {

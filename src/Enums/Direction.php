@@ -1,6 +1,6 @@
 <?php
 
-namespace Mollsoft\Telegram\Enums;
+namespace sakoora0x\Telegram\Enums;
 
 enum Direction: string
 {

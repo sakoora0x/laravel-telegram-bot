@@ -1,15 +1,15 @@
 <?php
 
-namespace Mollsoft\Telegram;
+namespace sakoora0x\Telegram;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;
-use Mollsoft\Telegram\Abstract\ApiClient;
-use Mollsoft\Telegram\DTO\BotCommand;
-use Mollsoft\Telegram\DTO\CallbackQuery;
-use Mollsoft\Telegram\DTO\Update;
-use Mollsoft\Telegram\DTO\User;
-use Mollsoft\Telegram\Interfaces\IsFile;
+use sakoora0x\Telegram\Abstract\ApiClient;
+use sakoora0x\Telegram\DTO\BotCommand;
+use sakoora0x\Telegram\DTO\CallbackQuery;
+use sakoora0x\Telegram\DTO\Update;
+use sakoora0x\Telegram\DTO\User;
+use sakoora0x\Telegram\Interfaces\IsFile;
 
 class API extends ApiClient
 {

@@ -1,15 +1,19 @@
 {
-    "name": "mollsoft/laravel-telegram-bot",
+    "name": "sakoora0x/laravel-telegram-bot",
     "description": "This is my package laravel-telegram-bot",
     "keywords": [
-        "Mollsoft",
+        "sakoora0x",
         "laravel",
         "laravel-telegram-bot",
         "telegram"
     ],
-    "homepage": "https://github.com/mollsoft/laravel-telegram-bot",
+    "homepage": "https://github.com/sakoora0x/laravel-telegram-bot",
     "license": "MIT",
     "authors": [
+        {
+            "name": "sakoora0x",
+            "email": "sakoora0x@gmail.com"
+        },
         {
             "name": "MollSoft",
             "email": "info@mollsoft.com",
@@ -35,13 +39,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Mollsoft\\Telegram\\": "src/",
-            "Mollsoft\\Telegram\\Database\\Factories\\": "database/factories/"
+            "sakoora0x\\Telegram\\": "src/",
+            "sakoora0x\\Telegram\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mollsoft\\Telegram\\Tests\\": "tests/",
+            "sakoora0x\\Telegram\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -73,10 +77,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mollsoft\\Telegram\\TelegramServiceProvider"
+                "sakoora0x\\Telegram\\TelegramServiceProvider"
             ],
             "aliases": {
-                "Telegram": "Mollsoft\\Telegram\\Facades\\Telegram"
+                "Telegram": "sakoora0x\\Telegram\\Facades\\Telegram"
             }
         }
     },

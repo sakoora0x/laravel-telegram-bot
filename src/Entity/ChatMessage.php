@@ -1,13 +1,13 @@
 <?php
 
-namespace Mollsoft\Telegram\Entity;
+namespace sakoora0x\Telegram\Entity;
 
 use DefStudio\Telegraph\DTO\Message;
 use DefStudio\Telegraph\Keyboard\Keyboard;
 use DefStudio\Telegraph\Keyboard\ReplyKeyboard;
 use DefStudio\Telegraph\Models\TelegraphChat;
-use Mollsoft\Telegram\Enums\Direction;
-use Mollsoft\Telegram\Foundation\BaseEntity;
+use sakoora0x\Telegram\Enums\Direction;
+use sakoora0x\Telegram\Foundation\BaseEntity;
 
 class ChatMessage extends BaseEntity
 {

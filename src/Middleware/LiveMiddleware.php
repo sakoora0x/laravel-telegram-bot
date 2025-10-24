@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollsoft\Telegram\Middleware;
+namespace sakoora0x\Telegram\Middleware;
 
 use Closure;
-use Mollsoft\Telegram\TelegramRequest;
+use sakoora0x\Telegram\TelegramRequest;
 
 class LiveMiddleware
 {

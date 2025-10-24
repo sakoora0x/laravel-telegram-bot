@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace Mollsoft\Telegram;
+namespace sakoora0x\Telegram;
 
 use danog\TelegramEntities\Entities;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Log;
-use Mollsoft\Telegram\DTO\CallbackQuery;
-use Mollsoft\Telegram\DTO\Contact;
-use Mollsoft\Telegram\DTO\Document;
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\DTO\PhotoSize;
-use Mollsoft\Telegram\DTO\VideoFile;
-use Mollsoft\Telegram\DTO\VideoNoteFile;
-use Mollsoft\Telegram\DTO\VoiceNote;
-use Mollsoft\Telegram\Interfaces\HasCaption;
-use Mollsoft\Telegram\Models\TelegramAttachment;
-use Mollsoft\Telegram\Models\TelegramBot;
-use Mollsoft\Telegram\Models\TelegramChat;
+use sakoora0x\Telegram\DTO\CallbackQuery;
+use sakoora0x\Telegram\DTO\Contact;
+use sakoora0x\Telegram\DTO\Document;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\DTO\PhotoSize;
+use sakoora0x\Telegram\DTO\VideoFile;
+use sakoora0x\Telegram\DTO\VideoNoteFile;
+use sakoora0x\Telegram\DTO\VoiceNote;
+use sakoora0x\Telegram\Interfaces\HasCaption;
+use sakoora0x\Telegram\Models\TelegramAttachment;
+use sakoora0x\Telegram\Models\TelegramBot;
+use sakoora0x\Telegram\Models\TelegramChat;
 use Symfony\Component\HttpFoundation\InputBag;
 
 class TelegramRequest extends \Illuminate\Http\Request

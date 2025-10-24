@@ -1,9 +1,9 @@
 <?php
 
-namespace Mollsoft\Telegram\Services;
+namespace sakoora0x\Telegram\Services;
 
 use Illuminate\Support\Facades\Log;
-use Mollsoft\Telegram\Models\TelegramChat;
+use sakoora0x\Telegram\Models\TelegramChat;
 
 class LiveJobService
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Mollsoft\Telegram\Facades;
+namespace sakoora0x\Telegram\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Mollsoft\Telegram\Telegram
+ * @see \sakoora0x\Telegram\Telegram
  */
 class Telegram extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Mollsoft\Telegram\Telegram::class;
+        return \sakoora0x\Telegram\Telegram::class;
     }
 }

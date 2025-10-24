@@ -1,20 +1,20 @@
 <?php
 
-namespace Mollsoft\Telegram\Services;
+namespace sakoora0x\Telegram\Services;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
-use Mollsoft\Telegram\DTO\InlineKeyboard;
-use Mollsoft\Telegram\DTO\Message;
-use Mollsoft\Telegram\DTO\Message\Document;
-use Mollsoft\Telegram\DTO\Message\Photo;
-use Mollsoft\Telegram\DTO\Message\Video;
-use Mollsoft\Telegram\DTO\Message\VideoNote;
-use Mollsoft\Telegram\DTO\Message\Voice;
-use Mollsoft\Telegram\DTO\ReplyKeyboard;
-use Mollsoft\Telegram\DTO\ReplyParameters;
-use Mollsoft\Telegram\DTO\VoiceNote;
+use sakoora0x\Telegram\DTO\InlineKeyboard;
+use sakoora0x\Telegram\DTO\Message;
+use sakoora0x\Telegram\DTO\Message\Document;
+use sakoora0x\Telegram\DTO\Message\Photo;
+use sakoora0x\Telegram\DTO\Message\Video;
+use sakoora0x\Telegram\DTO\Message\VideoNote;
+use sakoora0x\Telegram\DTO\Message\Voice;
+use sakoora0x\Telegram\DTO\ReplyKeyboard;
+use sakoora0x\Telegram\DTO\ReplyParameters;
+use sakoora0x\Telegram\DTO\VoiceNote;
 use Symfony\Component\DomCrawler\Crawler;
 
 

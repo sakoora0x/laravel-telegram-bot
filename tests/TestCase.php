@@ -1,10 +1,10 @@
 <?php
 
-namespace Mollsoft\Telegram\Tests;
+namespace sakoora0x\Telegram\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Mollsoft\Telegram\TelegramServiceProvider;
+use sakoora0x\Telegram\TelegramServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Mollsoft\\Telegram\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'sakoora0x\\Telegram\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

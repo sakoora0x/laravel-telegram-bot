@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Mollsoft\Telegram\Providers;
+namespace sakoora0x\Telegram\Providers;
 
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
-use Mollsoft\Telegram\Middleware\Authenticate;
-use Mollsoft\Telegram\Middleware\RedirectIfAuthenticated;
-use Mollsoft\Telegram\TelegramGuard;
-use Mollsoft\Telegram\TelegramRequest;
+use sakoora0x\Telegram\Middleware\Authenticate;
+use sakoora0x\Telegram\Middleware\RedirectIfAuthenticated;
+use sakoora0x\Telegram\TelegramGuard;
+use sakoora0x\Telegram\TelegramRequest;
 
 class AuthServiceProvider extends ServiceProvider
 {
