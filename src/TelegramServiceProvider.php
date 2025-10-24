@@ -5,7 +5,7 @@ namespace sakoora0x\Telegram;
 use sakoora0x\Telegram\Commands\InitCommand;
 use sakoora0x\Telegram\Commands\LiveCommand;
 use sakoora0x\Telegram\Commands\NewBotCommand;
-use sakoora0x\Telegram\Commands\PoolingCommand;
+use sakoora0x\Telegram\Commands\PollingCommand;
 use sakoora0x\Telegram\Commands\SetWebhookCommand;
 use sakoora0x\Telegram\Commands\TruncateCommand;
 use sakoora0x\Telegram\Commands\UnsetWebhookCommand;
@@ -44,7 +44,7 @@ class TelegramServiceProvider extends PackageServiceProvider
                 InitCommand::class,
                 SetWebhookCommand::class,
                 UnsetWebhookCommand::class,
-                PoolingCommand::class,
+                PollingCommand::class,
                 TruncateCommand::class,
                 LiveCommand::class,
             ])

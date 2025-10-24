@@ -5,9 +5,9 @@ namespace sakoora0x\Telegram\Commands;
 use Illuminate\Console\Command;
 use sakoora0x\Telegram\Services\PollingService;
 
-class PoolingCommand extends Command
+class PollingCommand extends Command
 {
-    protected $signature = 'telegram:pooling {bot}';
+    protected $signature = 'telegram:polling {bot}';
 
     protected $description = 'Command description';
 

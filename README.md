@@ -5,15 +5,11 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/sakoora0x/laravel-telegram-bot/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/sakoora0x/laravel-telegram-bot/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/sakoora0x/laravel-telegram-bot.svg?style=flat-square)](https://packagist.org/packages/sakoora0x/laravel-telegram-bot)
 
-EN: This package for Laravel 11+ allows you to easily create interactive Telegram bots, using Laravel routing, and using Blade templates to conduct a dialogue with the user.
+This package for Laravel 11+ allows you to easily create interactive Telegram bots, using Laravel routing, and using Blade templates to conduct a dialogue with the user.
 
-RU: Этот пакет для Laravel 11+ позволяет с легкостью создавать интерактивные Telegram боты, при чем использовать маршрутизацию Laravel, а для ведения диалога с пользователем - использовать Blade шаблоны.
-
-## Installation / Установка
+## Installation
 
 You can install the package via composer:
-
-Используйте менеджер пакетов Composer для установки пакета:
 
 ```bash
 composer require sakoora0x/laravel-telegram-bot
@@ -25,8 +21,6 @@ php artisan telegram:install
 
 You can publish and run the migrations with:
 
-Вы можете опубликовать и запустить миграции:
-
 ```bash
 php artisan vendor:publish --tag="telegram-migrations"
 php artisan migrate
@@ -34,21 +28,20 @@ php artisan migrate
 
 You can publish the config file with:
 
-Вы можете опубликовать конфигурационные файлы командой:
-
 ```bash
 php artisan vendor:publish --tag="telegram-config"
 ```
 
 Optionally, you can publish the views using:
 
-Опционально, Вы можете опубликовать шаблоны командой:
-
 ```bash
 php artisan vendor:publish --tag="telegram-views"
 ```
 
-Optionally, if you use Sail for local development, you need add PHP params `PHP_CLI_SERVER_WORKERS="10"` in file `supervisord.conf`:
+### Configuration for Laravel Sail
+
+Optionally, if you use Sail for local development, you need to add PHP parameter `PHP_CLI_SERVER_WORKERS="10"` in file `supervisord.conf`:
+
 ```bash
 [program:php]
 command=%(ENV_SUPERVISOR_PHP_COMMAND)s
@@ -60,22 +53,30 @@ stderr_logfile=/dev/stderr
 stderr_logfile_maxbytes=0
 ```
 
+### Authentication Setup
+
 You can use Laravel Auth, edit file `config/auth.php` and edit section `guards`:
+
 ```php
 'guards' => [
-        'web' => [...],
-        'telegram' => [
-            'driver' => 'telegram',
-            'provider' => 'users',
-        ]
-    ],
+    'web' => [...],
+    'telegram' => [
+        'driver' => 'telegram',
+        'provider' => 'users',
+    ]
+],
 ```
 
 After this you can use middleware `auth:telegram` in your routes.
 
-If you want work with automatic truncate dialogs, you must run command `php artisan telegram:truncate` every minute using Schedule.
+### Scheduled Tasks
 
-Вы можете настроить "живые страницы", для этого в файле `bootstrap/app.php` в раздел `withMiddleware` добавьте aliase:
+If you want to work with automatic dialog truncation, you must run command `php artisan telegram:truncate` every minute using Schedule.
+
+### Live Pages Setup
+
+You can configure "live pages" (auto-refreshing pages). In the `bootstrap/app.php` file, add an alias to the `withMiddleware` section:
+
 ```php
 ->withMiddleware(function (Middleware $middleware) {
     $middleware->alias([
@@ -84,54 +85,54 @@ If you want work with automatic truncate dialogs, you must run command `php arti
 })
 ```
 
-После чего в нужном маршруте подключите middleware:
+Then connect the middleware to the desired route:
+
 ```php
 Route::telegram('/', [\App\Telegram\Controllers\MyController::class, 'index'])
     ->middleware(['telegram.live:30']);
 ```
 
-Аргумент - частота в секундах, как часто обновлять страницу.
+The argument is the frequency in seconds for how often to update the page.
 
-А в файл `routes/console.php` добавить:
+And add to the `routes/console.php` file:
+
 ```php
 Schedule::command('telegram:live')
     ->runInBackground()
     ->everyMinute();
 ```
 
-## Usage / Использование
+## Usage
 
-Create new Telegram Bot:
+### Create New Telegram Bot
 
-```php
+```bash
 php artisan telegram:new-bot
 ```
 
+### Set Webhook for Bot
 
-Set Webhook for bot:
-
-```php
+```bash
 php artisan telegram:set-webhook
 ```
 
+### Unset Webhook for Bot
 
-Unset Webhook for bot:
-
-```php
+```bash
 php artisan telegram:unset-webhook
 ```
 
+### Manual Polling (on localhost) for Bot
 
-Manual pooling (on localhost) for bot:
-
-```php
-php artisan telegram:pooling [BOT_ID]
+```bash
+php artisan telegram:polling [BOT_ID]
 ```
 
+## Features
 
 ### Inline Keyboard
 
-If you want create button for change current URI query params, use this template:
+If you want to create a button to change the current URI query params, use this template:
 
 ```html
 <inline-keyboard>
@@ -141,7 +142,7 @@ If you want create button for change current URI query params, use this template
 </inline-keyboard>
 ```
 
-If you want send POST data you must use this template:
+If you want to send POST data, you must use this template:
 
 ```html
 <inline-keyboard>
@@ -151,7 +152,7 @@ If you want send POST data you must use this template:
 </inline-keyboard>
 ```
 
-If you POST data is long, you can encrypt using this template:
+If the POST data is long, you can encrypt it using this template:
 
 ```html
 <inline-keyboard>
@@ -161,7 +162,7 @@ If you POST data is long, you can encrypt using this template:
 </inline-keyboard>
 ```
 
-If you want make redirect to another page from button, use this template:
+If you want to make a redirect to another page from a button, use this template:
 
 ```html
 <inline-keyboard>
@@ -171,10 +172,12 @@ If you want make redirect to another page from button, use this template:
 </inline-keyboard>
 ```
 
-### Edit Form / Форма для редактирования данных
+### Edit Form
+
+Create a form class for data editing:
 
 ```php
-class MyForm extends \sakoora0x\Telegram\EditForm\BaseForm 
+class MyForm extends \sakoora0x\Telegram\EditForm\BaseForm
 {
     public function rules(): array
     {
@@ -183,19 +186,21 @@ class MyForm extends \sakoora0x\Telegram\EditForm\BaseForm
             'phone' => ['required', 'string', 'min:10', 'max:15'],
         ];
     }
-    
+
     public function titles(): array
     {
         return [
-            'name' => 'Ваше имя',
-            'phone' => 'Ваш номер телефона'
+            'name' => 'Your name',
+            'phone' => 'Your phone number'
         ];
     }
 }
 ```
 
+Use the form in your controller:
+
 ```php
-class MyController 
+class MyController
 {
     public function edit(MyForm $form): mixed
     {
@@ -203,24 +208,26 @@ class MyController
             'name' => 'Default name',
             'phone' => '1234567890',
         ]);
-        
-        if( $form->validate() ) {
+
+        if ($form->validate()) {
             // $form->get();
         }
-        
+
         return view('...', compact('form'));
     }
-    
+
     public function create(MyForm $form): mixed
     {
-        if( $form->isCreate()->validate() ) {
+        if ($form->isCreate()->validate()) {
             // $form->get();
         }
-        
+
         return view('...', compact('form'));
     }
 }
 ```
+
+Display the form in your Blade template:
 
 ```html
 <message>
@@ -232,32 +239,38 @@ class MyController
 </message>
 ```
 
-## Testing / Тестирование
+## Testing
+
+The package includes comprehensive tests covering all core functionality.
 
 ```bash
 composer test
 ```
 
-## Ideas / Идеи
+**Test Results:**
+- ✅ 88 passing tests
+- ⏭️ 1 skipped
+- 138 assertions
+- Duration: ~2.4 seconds
 
-1. В Inline Button сделать параметр `query-history=false` что бы по нему текущий URL не сохранялся в referer и при back не выполнялся сброс формы - а был возврат назад.
-2. Возможность загрузки пользователями фото/видео/документы и парсинг capture в message.
-3. В Reply Button сделать кнопку отправки номера телефона + получение результатов в TelegramRequest.
-4. Чтение результата пересланного контакта в TelegramRequest.
+See [TESTING.md](TESTING.md) for detailed testing documentation.
 
-## Changelog / Логи изменений
+## Future Ideas
+
+1. Add `query-history=false` parameter to Inline Button so that the current URL is not saved in referer, preventing form reset on back navigation.
+2. Enable users to upload photos/videos/documents and parse captions in messages.
+3. Add phone number sharing button in Reply Button and receive results in TelegramRequest.
+4. Read results from forwarded contacts in TelegramRequest.
+
+## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
-Пожалуйста смотрите [CHANGELOG](CHANGELOG.md) для получения подробной информации об изменениях.
-
-## Credits / Авторы
+## Credits
 
 - [MollSoft](https://github.com/mollsoft)
 - [sakoora0x](https://github.com/sakoora0x)
 
-## License / Лицензия
+## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-Лицензия MIT (MIT). Дополнительную информацию см. в [Файле лицензии](LICENSE.md).
