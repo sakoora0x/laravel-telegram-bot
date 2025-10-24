@@ -27,10 +27,20 @@ class TestCase extends Orchestra
     public function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');
+        config()->set('database.connections.testing', [
+            'driver' => 'sqlite',
+            'database' => ':memory:',
+            'prefix' => '',
+        ]);
+    }
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_laravel-telegram-bot_table.php.stub';
-        $migration->up();
-        */
+    protected function defineDatabaseMigrations()
+    {
+        $files = glob(__DIR__.'/../database/migrations/*.php.stub');
+
+        foreach ($files as $file) {
+            $migration = include $file;
+            $migration->up();
+        }
     }
 }
